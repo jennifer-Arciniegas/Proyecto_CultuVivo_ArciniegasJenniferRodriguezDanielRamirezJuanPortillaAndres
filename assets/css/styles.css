@@ -73,17 +73,7 @@ figcaption {
 
     /* COLORES */
 
-    --morado-uno: #BF99F2;
-    --morado-dos: #995BD5;
-    --morado-tres: #721CB8;
-    --morado-cuatro: #491A74;
-    --morado-cinco: #421869;
-
-    --verde-uno: #9CF945;
-    --verde-dos: #8EDF34;
-    --verde-tres: #80C423;
-    --verde-cuatro: #509724;
-    --verde-cinco: #1F6924;
+    --color-botones: #52b788;
 
     /* FONT-FAMILY */
     --roboto: 'Roboto Slab', serif;
@@ -97,6 +87,8 @@ figcaption {
 /* TIPOGRAFIA */
 
 .roboto { font-family: var(--roboto); }
+
+
 
 /*-----------------------------*/
 /*         COMPONENTES         */
