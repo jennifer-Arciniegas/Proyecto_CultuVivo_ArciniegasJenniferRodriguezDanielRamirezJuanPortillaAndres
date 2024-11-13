@@ -139,3 +139,9 @@ body {
 .enviar {
     max-width: 50%;
 }
+
+.galeria-catalogo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3vw;
+}
