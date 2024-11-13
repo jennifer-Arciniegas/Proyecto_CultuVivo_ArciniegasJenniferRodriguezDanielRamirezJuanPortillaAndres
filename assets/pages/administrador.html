@@ -28,8 +28,38 @@
         <div id="navMenu" class="navbar-menu">
             <div class="navbar-end">
                 <a class="navbar-item" href="../pages/administrador.html">Eventos</a>
-                <a class="navbar-item" href="catalogo.html">Agregar</a>
-                <a class="navbar-item" href="catalogo.html">Reportes</a>
+                <div id="modal-js-example" class="modal">
+                    <div class="modal-background"></div>
+                  
+                        <div class="modal-content">
+                          <div class="box is-flex is-flex-direction-column is-justify-contend-center is-align-items-center">
+                            <input class="input mb-3" type="text" placeholder="Ingrese su usuario">
+                            <input class="input" type="password" placeholder="Ingrese su contraseña">
+                          </div>
+                        </div>
+                    
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                  <button class="js-modal-trigger" data-target="modal-js-example">
+                    <a class="navbar-item">Agregar</a>                  
+                  </button>
+                </div>
+                <div id="modal-js-example" class="modal">
+                    <div class="modal-background"></div>
+                  
+                        <div class="modal-content">
+                          <div class="box is-flex is-flex-direction-column is-justify-contend-center is-align-items-center">
+                            <input class="input mb-3" type="text" placeholder="Ingrese su usuario">
+                            <input class="input" type="password" placeholder="Ingrese su contraseña">
+                          </div>
+                        </div>
+                    
+                        <button class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                  <button class="js-modal-trigger" data-target="modal-js-example">
+                    <a class="navbar-item">Reportes</a>
+                </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -162,6 +192,7 @@
         </div>
       </footer>
 
+      <script src="../js/script.js"></script>
 
 </body>
 <script>
