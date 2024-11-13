@@ -125,7 +125,11 @@ body {
 }
 
 .navbar {
-    height: 10%;
+    height: 10vh;
+}
+
+.seccion-principal {
+    height: 70.4vh;
 }
 
 .navbar h1 {
