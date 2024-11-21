@@ -3,41 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <style>
+        /* Estilo del fondo */
+        body {
+            background-color: #9797979d;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Contenedor del formulario */
+        .box {
+            background: rgba(237, 241, 239, 0.966);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+    </style>
+    <title>Agregar Evento</title>
 </head>
 <body>
-
-    <div class="contenedor-agregar">
-        <div class="modal-content">
-            <div class="box is-flex is-flex-direction-column is-justify-contend-center is-align-items-center">
-               <STRong> <h1>AGREGAR EVENTO</h1></STRong>
-              <br><br>
-              <input class="input mb-3" type="text" placeholder="Nombre">
-              <input class="input" type="datetime" placeholder="Fecha">
-              <br>
-              <input class="input mb-3" type="text" placeholder="Lugar">
-              <input class="input mb-3" type="text" placeholder="Capacidad">
-              <div class="field">
-                  <label class="label">Seleccione el artista</label>
-                  <div class="control">
-                    <div class="select">
-                      <select>
-                        <option>Artista 1</option>
-                        <option>Artista 2</option>
-                      </select>
-                    </div>
-                  </div>
+    <div class="box">
+        <h1 class="title has-text-centered has-text-weight-bold">Agregar Evento</h1>
+        <form>
+            <!-- Campo: Nombre -->
+            <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Nombre del evento">
                 </div>
-                <button class="button is-success">Agregar</button>
-       
-      </div>
-   
-  </div>
-
-
+            </div>
+            <!-- Campo: Fecha -->
+            <div class="field">
+                <label class="label">Fecha</label>
+                <div class="control">
+                    <input class="input" type="datetime-local">
+                </div>
+            </div>
+            <!-- Campo: Lugar -->
+            <div class="field">
+                <label class="label">Lugar</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Lugar del evento">
+                </div>
+            </div>
+            <!-- Campo: Capacidad -->
+            <div class="field">
+                <label class="label">Capacidad</label>
+                <div class="control">
+                    <input class="input" type="number" placeholder="Capacidad máxima">
+                </div>
+            </div>
+            <!-- Campo: Selección de Artista -->
+            <div class="field">
+                <label class="label">Seleccione el Artista</label>
+                <div class="control">
+                    <div class="select is-fullwidth">
+                        <select>
+                            <option>Artista 1</option>
+                            <option>Artista 2</option>
+                            <option>Artista 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones -->
+            <div class="field is-grouped is-grouped-centered">
+                <div class="control">
+                    <button class="button is-success">Agregar</button>
+                </div>
+                <div class="control">
+                    <a href="../pages/administrador.html" class="button is-light">Volver</a>
+                </div>
+            </div>
+        </form>
     </div>
-            
-    
 </body>
 </html>
