@@ -118,7 +118,7 @@ ANIMACIONES
 /* ------------------------------------------------- */
 
 body {
-    background: linear-gradient(45deg, grey, rgb(95, 86, 86));
+    background: linear-gradient(25deg, #D8F3DC, rgb(224, 170, 255));
     background-size: 300% 300%;
     animation: color 25s ease-in-out infinite;
     height: 100vh;
@@ -126,6 +126,7 @@ body {
 
 .navbar h1 {
     font-size: 3rem;
+    
 }
 
 .enviar {
@@ -142,4 +143,14 @@ body {
 .seccion-ingresar {
     max-width: 25%;
     min-width: 300px;
+}
+
+/*---COLORES*/
+#pie {
+    background-color: #40916C;
+   
+}
+
+#meni {
+    background-color: #40916C;
 }
