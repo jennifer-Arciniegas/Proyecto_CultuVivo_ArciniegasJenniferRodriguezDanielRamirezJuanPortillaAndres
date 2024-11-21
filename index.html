@@ -26,9 +26,50 @@
             <h1 class="ml-6 roboto">Cultu Vivo</h1>
         </div>
         <div class="navbar-end">
-                        <a class="navbar-item mr-6" href="./assets/pages/registro-asistente.html">Registro de Asistente</a>
-                        <a class="navbar-item mr-6" href="./assets/pages/ingreso.html">Ingresar</a>
-        </div>
+                <!-- First Modal: Registro de Asistente -->
+                <div id="modal-registro-asistente" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <h1 class="is-size-4 ingresar mb-6 pt-6 ml-6">Registro de Asistente</h1>
+                            <a href="./asistente.html" class="is-size-5 mt-1 ml-6 mb-6">Ingresar como Asistente</a>
+                            <input class="input mb-3" type="text" placeholder="Ingrese su nombre completo">
+                            <input class="input mb-3" type="email" placeholder="Ingrese su correo electrónico">
+                            <input class="input mb-3" type="text" placeholder="Ingrese el tipo de su boleto">
+                            <div class="select ml-6 mt-4">
+                                <select>
+                                    <option>Confirmado</option>
+                                    <option>En Espera</option>
+                                    <option>Cancelado</option>
+                                </select>
+                            </div>
+                            <button class="enviar button mt-4 ml-6">Enviar</button>
+                        </div>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+                <button class="js-modal-trigger mr-6" data-target="modal-registro-asistente">
+                    <p>Registro de Asistente</p>
+                </button>
+
+                <!-- Second Modal: Ingresar como Administrador -->
+                <div id="modal-ingresar-admin" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box">
+                            <h1 class="is-size-4 mb-4 pt-6 ml-6">Ingresar</h1>
+                            <a href="./administrador.html" class="is-size-5 mt-1 ml-6 mb-6">Ingresar como Administrador</a>
+                            <input class="input mb-3 mt-6" type="text" placeholder="Ingrese su usuario">
+                            <input class="input mb-3" type="password" placeholder="Ingrese su contraseña">
+                            <button class="enviar button mt-5 mb-6 ml-6">Enviar</button>
+                        </div>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+                <button class="js-modal-trigger mr-6" data-target="modal-ingresar-admin">
+                    Ingresar
+                </button>
+            </div>
     </nav>
     <section class="seccion-principal">
         <h1 class="is-size-3 mt-4 ml-6">Eventos más Populares</h1>

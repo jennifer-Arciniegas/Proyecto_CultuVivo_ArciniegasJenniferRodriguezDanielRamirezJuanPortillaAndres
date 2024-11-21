@@ -153,4 +153,6 @@ body {
 
 #meni {
     background-color: #40916C;
+    min-width: 250px;
+
 }
