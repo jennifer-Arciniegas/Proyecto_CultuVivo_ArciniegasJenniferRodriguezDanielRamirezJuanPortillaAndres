@@ -1,0 +1,54 @@
+.galeria-catalogo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3vw;
+}
+
+.card:hover {
+    transform: translateY(-1.3vw); /* Eleva la tarjeta ligeramente */
+    box-shadow: 0 20px 30px rgb(165, 165, 165); /* Sombra más fuerte al pasar el cursor */
+  }
+
+.card{
+    transition: all 300ms ease-in-out;
+}
+
+.compraBoletas {
+    font-size: 3rem;
+
+}
+nav{
+    display: flex;
+    justify-content: end;
+    
+}
+.navbar h1 {
+    font-size: 3rem;
+}
+
+.navbar{
+    display: flex;
+    z-index: 1000;
+    text-align: center;
+    background-color: #40916C;
+}
+
+.galeria-catalogo h1 {
+    font-size: 3rem;
+}
+
+#pie {
+    background-color: #40916C;
+    
+}
+
+#pie ul{
+    list-style-type: none;
+}
+
+body{
+    background: linear-gradient(5deg, #D8F3DC, rgb(224, 170, 255))  ;
+    background-size: 300% 300%;
+    animation: color 25s ease-in-out infinite;
+    
+}
