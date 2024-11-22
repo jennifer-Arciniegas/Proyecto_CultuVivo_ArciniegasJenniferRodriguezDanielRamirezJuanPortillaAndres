@@ -26,31 +26,60 @@
             <h1 class="ml-6 roboto">Cultu Vivo</h1>
         </div>
         <div class="navbar-end">
-                <!-- First Modal: Registro de Asistente -->
-                <div id="modal-registro-asistente" class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                        <div class="box">
-                            <h1 class="is-size-4 ingresar mb-6 pt-6 ml-6">Registro de Asistente</h1>
-                            <a href="./assets/pages/asistente.html" class="is-size-5 mt-1 ml-6 mb-6">Ingresar como Asistente</a>
-                            <input class="input mb-3" type="text" placeholder="Ingrese su nombre completo">
-                            <input class="input mb-3" type="email" placeholder="Ingrese su correo electrónico">
-                            <input class="input mb-3" type="text" placeholder="Ingrese el tipo de su boleto">
-                            <div class="select ml-6 mt-4">
-                                <select>
-                                    <option>Confirmado</option>
-                                    <option>En Espera</option>
-                                    <option>Cancelado</option>
-                                </select>
-                            </div>
-                            <button class="enviar button mt-4 ml-6">Enviar</button>
+            <div id="addEventModal" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title ml-6">Registro de Asistente</p>
+                    <button class="delete" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <div class="box">
+                      <form id="eventForm">
+                        <!-- Campo: Nombre -->
+                        <div class="field">
+                          <label class="label">Nombre</label>
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Ingrese su nombre completo">
+                          </div>
                         </div>
+                        <!-- Campo: Fecha -->
+                        <div class="field">
+                          <label class="label">Correo Electrónico</label>
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Ingrese su correo electrónico">
+                          </div>
+                        </div>
+                        <!-- Campo: Selección de Boleto -->
+                        <div class="field">
+                          <label class="label">Seleccione el tipo de Boleto</label>
+                          <div class="control">
+                            <div class="select is-fullwidth">
+                              <select>
+                                <option>Confirmado</option>
+                                <option>En Espera</option>
+                                <option>Cancelado</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Botones -->
+                        <div class="field is-grouped is-grouped-centered">
+                          <div class="control">
+                            <button class="button is-success" type="submit">Enviar</button>
+                          </div>
+                          <div class="control">
+                            <button class="button is-success modal-close-button" type="button"><a style="text-decoration: none; color: black;" href="./assets/pages/asistente.html">Ingresar como Asistente</a></button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                    <button class="modal-close is-large" aria-label="close"></button>
+                  </section>
                 </div>
-                <button class="js-modal-trigger mr-6" data-target="modal-registro-asistente">
-                    <p>Registro de Asistente</p>
-                </button>
+              </div>
+              <button class="js-modal-trigger mr-6" data-target="addEventModal">
+                Registro de Asistente
+              </button>
 
                 <!-- Second Modal: Ingresar como Administrador -->
                 <div id="modal-ingresar-admin" class="modal">
