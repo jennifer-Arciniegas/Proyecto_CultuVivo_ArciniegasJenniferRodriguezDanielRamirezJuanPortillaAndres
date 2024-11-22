@@ -82,20 +82,46 @@
               </button>
 
                 <!-- Second Modal: Ingresar como Administrador -->
-                <div id="modal-ingresar-admin" class="modal">
+                <div id="modal-ingresar" class="modal">
                     <div class="modal-background"></div>
-                    <div class="modal-content">
+                    <div class="modal-card">
+                      <header class="modal-card-head">
+                        <p class="modal-card-title ml-6">Ingresar</p>
+                        <button class="delete" aria-label="close"></button>
+                      </header>
+                      <section class="modal-card-body">
                         <div class="box">
-                            <h1 class="is-size-4 mb-4 pt-6 ml-6">Ingresar</h1>
-                            <a href="./assets/pages/administrador.html" class="is-size-5 mt-1 ml-6 mb-6">Ingresar como Administrador</a>
-                            <input class="input mb-3 mt-6" type="text" placeholder="Ingrese su usuario">
-                            <input class="input mb-3" type="password" placeholder="Ingrese su contraseña">
-                            <button class="enviar button mt-5 mb-6 ml-6">Enviar</button>
+                          <form id="eventForm">
+                            <!-- Campo: Usuario -->
+                            <div class="field">
+                              <label class="label">Usuario</label>
+                              <div class="control">
+                                <input class="input" type="text" placeholder="Ingrese su usuario">
+                              </div>
+                            </div>
+                            <!-- Campo: Contraseña -->
+                            <div class="field">
+                              <label class="label">Contraseña</label>
+                              <div class="control">
+                                <input class="input" type="password" placeholder="Ingrese su contraseña">
+                              </div>
+                            </div>  
                         </div>
+                            <!-- Botones -->
+                            <div class="field is-grouped is-grouped-centered">
+                              <div class="control">
+                                <button class="button is-success" type="submit">Enviar</button>
+                              </div>
+                              <div class="control">
+                                <button class="button is-success modal-close-button" type="button"><a style="text-decoration: none; color: black;" href="./assets/pages/administrador.html">Ingresar como Administrador</a></button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </section>
                     </div>
-                    <button class="modal-close is-large" aria-label="close"></button>
-                </div>
-                <button class="js-modal-trigger mr-6" data-target="modal-ingresar-admin">
+                  </div>
+                <button class="js-modal-trigger mr-6" data-target="modal-ingresar">
                     Ingresar
                 </button>
             </div>
