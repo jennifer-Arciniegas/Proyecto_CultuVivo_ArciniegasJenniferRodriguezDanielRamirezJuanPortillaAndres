@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    text-decoration: none;
+
 }
 
 *,
@@ -121,7 +121,7 @@ body {
     background: linear-gradient(25deg, #D8F3DC, rgb(224, 170, 255));
     background-size: 300% 300%;
     animation: color 25s ease-in-out infinite;
-    height: 100vh;
+
 }
 
 .navbar h1 {
@@ -148,6 +148,9 @@ body {
 /*---COLORES*/
 #pie {
     background-color: #40916C;
+    width: 100vw;
+    position: relative;
+    left: -10vw;
    
 }
 
@@ -155,4 +158,13 @@ body {
     background-color: #40916C;
     min-width: 250px;
 
+}
+
+.card:hover {
+    transform: translateY(-1.3vw); /* Eleva la tarjeta ligeramente */
+    box-shadow: 0 20px 30px rgb(165, 165, 165); /* Sombra más fuerte al pasar el cursor */
+  }
+
+.card{
+    transition: all 300ms ease-in-out;
 }
