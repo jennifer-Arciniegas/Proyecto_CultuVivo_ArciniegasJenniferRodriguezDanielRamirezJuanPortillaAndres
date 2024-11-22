@@ -39,16 +39,20 @@ nav{
 
 #pie {
     background-color: #40916C;
-    
+    width: 100vw;
+    position: relative;
+    height: 20vh;
+    bottom: -2vw
+   
 }
 
 #pie ul{
     list-style-type: none;
 }
 
-body{
-    background: linear-gradient(5deg, #D8F3DC, rgb(224, 170, 255))  ;
+body {
+    background: rgba(226, 203, 235, 0.986);
     background-size: 300% 300%;
     animation: color 25s ease-in-out infinite;
-    
+
 }
