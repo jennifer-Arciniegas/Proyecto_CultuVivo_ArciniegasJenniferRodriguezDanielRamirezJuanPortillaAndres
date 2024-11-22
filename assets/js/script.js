@@ -52,3 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
     closeAllModals();
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burgerIcon = document.querySelector('.navbar-burger');
+  const navbarMenu = document.querySelector('#navMenu');
+
+  burgerIcon.addEventListener('click', () => {
+    burgerIcon.classList.toggle('is-active');
+    navbarMenu.classList.toggle('is-active');
+  });
+});
