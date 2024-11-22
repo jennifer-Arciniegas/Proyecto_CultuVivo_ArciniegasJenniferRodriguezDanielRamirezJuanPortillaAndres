@@ -118,7 +118,7 @@ ANIMACIONES
 /* ------------------------------------------------- */
 
 body {
-    background: linear-gradient(25deg, #D8F3DC, rgb(224, 170, 255));
+    background: rgba(226, 203, 235, 0.986);
     background-size: 300% 300%;
     animation: color 25s ease-in-out infinite;
 
@@ -151,6 +151,8 @@ body {
     width: 100vw;
     position: relative;
     left: -10vw;
+    height: 20vh;
+    bottom: -2vw
    
 }
 
